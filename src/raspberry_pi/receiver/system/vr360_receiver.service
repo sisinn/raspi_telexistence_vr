@@ -1,0 +1,14 @@
+[Unit]
+Description=VR360_RECEIVER
+After=networking.service rc-local.service systemd-journald.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/vr360_receiver.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy = multi-user.target
+

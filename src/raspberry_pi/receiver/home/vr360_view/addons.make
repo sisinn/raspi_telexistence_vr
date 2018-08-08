@@ -1,0 +1,4 @@
+ofxOMXPlayer
+ofxIO
+ofxPoco
+ofxSerial
