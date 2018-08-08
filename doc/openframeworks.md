@@ -59,7 +59,7 @@ https://github.com/bakercp/ofxSerial
 ※arduino側でfirmataを使用する場合は、「ofArduino」という選択肢がある  
 
 #### ofxOMXPlayeyのインストール  
-※事前に、ffmpegをインストールしておく  
+
 ```
 $ cd /home/pi/openFrameworks/addons
 $ git clone https://github.com/jvcleave/ofxOMXPlayer.git

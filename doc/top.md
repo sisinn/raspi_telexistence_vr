@@ -25,8 +25,8 @@
 
 ---  
 ### ■用意したもの  
-* ラスパイ関連（２セット）  
-    * ラスパイ本体  
+* ラズパイ関連（２セット）  
+    * ラズパイ本体  
     →　Raspberry Pi 3 Model B+  
     * microSDカード  
     →　SanDisk microSDHC 98MB/s 32GB Ultra SDSQUAR-032G  
@@ -101,7 +101,11 @@
 ---
 
 ### ■結果  
-とりあえず動いた  
+
+![sender](XXX.jpg)  
+![receiver](XXX.jpg)  
+
+とりあえず動いたレベル  
 →ソースコード等は、GitHubレポジトリを参照
 
 ---

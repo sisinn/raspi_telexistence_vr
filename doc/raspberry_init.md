@@ -73,25 +73,25 @@ WindowsPC上で、以下の操作
 $ sudo raspi-config
 ```  
 
-    * [8 Update]  
-        更新実行  
-    * [4 Localisation Options] → [I2 Change Timezone]  
-        "Asia->Tokyo"を選択  
-    * [4 Localisation Options] → [I4 Change Wi-fi Country]  
-        JP Japan"を選択  
-    * その他の設定補足  
-        * microSDの容量拡張：不要  
-        * sshの有効化：不要  
-        * serialとBluetoothは、排他利用なので注意  
-        * RaspbianLite版は、GUIなし  
-        * OpenGLは、ES版のままで  
-        * GPUメモリ割り当ては、後で変更  
-        * Wifi country設定、後で変更  
-        * ロケールは、そのまま  
-        * キーボード設定は、自分の使用するものに合わせて変更  
-        * Overclockは、このメニューでは設定できなくなったらしい  
-        * 上記以外の設定は、こちらを参照  
-        http://igarashi-systems.com/sample/translation/raspberry-pi/configuration/raspi-config.html  
+* [8 Update]  
+    更新実行  
+* [4 Localisation Options] → [I2 Change Timezone]  
+    "Asia->Tokyo"を選択  
+* [4 Localisation Options] → [I4 Change Wi-fi Country]  
+    JP Japan"を選択  
+* その他の設定補足  
+    * microSDの容量拡張：不要  
+    * sshの有効化：不要  
+    * serialとBluetoothは、排他利用なので注意  
+    * RaspbianLite版は、GUIなし  
+    * OpenGLは、ES版のままで  
+    * GPUメモリ割り当ては、後で変更  
+    * Wifi country設定、後で変更  
+    * ロケールは、そのまま  
+    * キーボード設定は、自分の使用するものに合わせて変更  
+    * Overclockは、このメニューでは設定できなくなったらしい  
+    * 上記以外の設定は、こちらを参照  
+    http://igarashi-systems.com/sample/translation/raspberry-pi/configuration/raspi-config.html  
 
 ### ■ラズパイの各種設定
 ---  

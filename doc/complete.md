@@ -24,12 +24,12 @@ BNO055側クォータニオンのXYZ軸と、openFrameworks側クォータニオ
 
 ※ofQuaternionの`set()`関数の引数は、左から順にfloat x, float y, float z, float w  
 
-<span style="font-size: 200%">左から順にX、Y、Z、W</span>  
+**左から順にX、Y、Z、W**  
+**左から順にX、Y、Z、W**  
+**左から順にX、Y、Z、W**  
 
-　  
-<span style="font-size: 300%">左から順にX、Y、Z、W</span>  
-
-　ここ間違ってて、苦しみました。。。  
+大事なことなので3回言いました。  
+ここ間違ってて、苦しんだ。。。  
 
 ### ■表示処理側アプリ作成
 ---
@@ -161,6 +161,10 @@ $ sudo systemctl enable vr360_receiver.service
 
 ### ■運用手順  
 ---
+
+![sender](XXX.jpg)  
+![receiver](XXX.jpg)  
+
 1. 撮影側ラズパイに、カメラを接続し、電源ON  
 ※WiFiアクセスポイントの起動で、しばらく（5秒ぐらい？）待つ必要あり  
 2. フィッシングベストを着る  

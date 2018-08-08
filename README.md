@@ -16,18 +16,18 @@ Display the remote image of Dual Fisheye camera on the VR goggles and experience
 ## Task  
 
 The following sentences are in Japanese only.  
-* [Commentary top](./top.md)
-* [Raspberry Pi Init](./raspberry_init.md)
-* [Sender](./sender.md)  
-* [Receiver](./receiver.md)  
-* [FFmpeg](./ffmpeg.md)  
-* [H264](./h264.md)  
-* [openFrameworks](./openframeworks.md)  
-* [OpenGL](./vr360.md)  
-* [3DoF](./3dof.md)  
-* [VR Goggles](./goggles.md)  
-* [Complete](./complete.md)  
-* [Calibration](./calibration.md)  
+* [Commentary top](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/top.md)
+* [Raspberry Pi Init](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/raspberry_init.md)
+* [Sender](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/sender.md)  
+* [Receiver](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/receiver.md)  
+* [FFmpeg](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/ffmpeg.md)  
+* [H264](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/h264.md)  
+* [openFrameworks](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/openframeworks.md)  
+* [OpenGL](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/vr360.md)  
+* [3DoF](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/3dof.md)  
+* [VR Goggles](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/goggles.md)  
+* [Complete](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/complete.md)  
+* [Calibration](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/calibration.md)  
 
 ---
 ## Author
