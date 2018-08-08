@@ -3,6 +3,8 @@
 
 Display the remote image of Dual Fisheye camera on the VR goggles and experience the telexistence.
 
+<https://github.com/sisinn/raspi_telexistence_vr>  
+
 ---
 ## Main Equipment  
 

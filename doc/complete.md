@@ -35,6 +35,7 @@ BNO055側クォータニオンのXYZ軸と、openFrameworks側クォータニオ
 ---
 前項までの内容を踏まえて、再生側機器としてVRゴーグルにカメラ映像を描画するLinuxアプリを作成  
 ソースコードは、GitHub参照  
+<https://github.com/sisinn/raspi_telexistence_vr/tree/master/src/raspberry_pi/receiver/home/vr360_view>  
 
 Makeして動作確認
 ```
@@ -162,8 +163,8 @@ $ sudo systemctl enable vr360_receiver.service
 ### ■運用手順  
 ---
 
-![sender](XXX.jpg)  
-![receiver](XXX.jpg)  
+![撮影側機器](./img/sender.jpg)  
+![表示側機器](./img/receiver.jpg)  
 
 1. 撮影側ラズパイに、カメラを接続し、電源ON  
 ※WiFiアクセスポイントの起動で、しばらく（5秒ぐらい？）待つ必要あり  
@@ -176,5 +177,7 @@ $ sudo systemctl enable vr360_receiver.service
 8. 3秒待つ  
 9. 正面を向いて、赤スイッチを押す  
 10. 3秒待つ  
+
+![合体](./img/complete.jpg)  
 
 [前ページ](./goggles.md) / [top](./top.md) / [次ページ](./calibration.md)  

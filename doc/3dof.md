@@ -7,7 +7,7 @@
 VRゴーグルを装着する頭部の向きを、リアルタイムに検出する。  
 センサーやスイッチを接続するにあたって、ラズパイに直接接続することも可能であるが、ソフト/ハード両面で実装を簡易化するため、arduinoを使う。  
 
-![arduino+9axis](XXX.jpg)  
+![arduino+9axis](./img/3dof.jpg)  
 
 ### ■arduino  
 ---
@@ -124,5 +124,8 @@ Arduino用フォルダのlibrariesに、PacketSerialフォルダを作成し、s
 ```
 
 ※シリアル受信側（ラズパイ）で、正しく受信できなければ値を使わなければいいだけなので、一時的なデータ化けに対するリカバリー処理はしない。  
+
+ソースコード全体は、GitHub参照  
+<https://github.com/sisinn/raspi_telexistence_vr/tree/master/src/arduino/arduino_3dof>  
 
 [前ページ](./vr360.md) / [top](./top.md) / [次ページ](./goggles.md)  

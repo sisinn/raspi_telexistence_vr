@@ -6,6 +6,14 @@
 
 スマホ用のVRゴーグルが安価に手に入るので、それを活用  
 
+### ■arduinoの貼り付け  
+---
+
+後頭部に来るVRゴーグルのバンド部分に、マジックテープで貼り付け  
+
+![magic_tape](./img/back-3dof1.jpg)  
+![BackOfHead](./img/back-3dof2.jpg)  
+
 ### ■モニターケースの改造  
 ---
 
@@ -17,28 +25,24 @@
 * 表示側から5層目を、破棄  
 * ネジをM3x12mmに変更（できるだけ頭が薄いもの）  
 
+![厚さ12mm](./img/thickness12mm.jpg)  
+
 5mm程度薄くできた状態になるので、これでギリギリ閉まる状態に  
 ※ただし、ピッタリすぎて、蓋を手で開けれない。開けるときは、マイナスドライバでこじ開ける。  
 
-![monitor](XXX.jpg)  
-
-### ■arduinoの貼り付け  
----
-
-後頭部に来るVRゴーグルのバンド部分に、マジックテープで貼り付け  
-
-![magic_tape](XXX.jpg)  
-![BackOfHead](XXX.jpg)  
-
+![open](./img/goggles-monitor1.jpg)  
+![close](./img/goggles-monitor2.jpg)  
 
 ### ■ラズパイとモバイルバッテリーの装着  
 ---
 
-![vest](XXX.jpg)  
+![vest](./img/vest.jpg)  
 
 原宿で流行しているらしい（？）フィッシングベストを活用  
 * 左胸ポケット：ラズパイ
 * 右胸ポケット：モバイルバッテリー
+
+![合体](./img/complete.jpg)  
 
 ※配線は適当に・・・  
 

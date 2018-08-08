@@ -102,11 +102,12 @@
 
 ### ■結果  
 
-![sender](XXX.jpg)  
-![receiver](XXX.jpg)  
+![撮影側機器](./img/sender.jpg)  
+![表示側機器](./img/receiver.jpg)  
 
 とりあえず動いたレベル  
-→ソースコード等は、GitHubレポジトリを参照
+→ソースコード等は、GitHubレポジトリを参照  
+<https://github.com/sisinn/raspi_telexistence_vr>  
 
 ---
 
