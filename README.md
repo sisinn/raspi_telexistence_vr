@@ -14,6 +14,9 @@ Display the remote image of Dual Fisheye camera on the VR goggles and experience
 * VR Goggles (P-VRG03BK)  
 * LCD Monitor (LS055-CGS-LCD-SET)  
 
+![sender](./img/sender.jpg)  
+![receiver](./img/receiver.jpg)  
+
 ---
 ## Task  
 
