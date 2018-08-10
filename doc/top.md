@@ -1,5 +1,8 @@
 # 全天球カメラとVRゴーグルで、テレイグジスタンス体験(1)
 
+Qiitaにも、同じ内容を投稿  
+<https://qiita.com/sisinn/items/2656d18c472849f8d0b6>  
+
 ## 1. 概略
 
 ※[作業一覧](#task_list)へ  
@@ -109,10 +112,12 @@
 →ソースコード等は、GitHubレポジトリを参照  
 <https://github.com/sisinn/raspi_telexistence_vr>  
 
+デモとして、スイカ割り的な動作を撮影してみた。  
+[![サイドビュー　疑似スイカ割り](http://img.youtube.com/vi/ms5B0luU0no/0.jpg)](http://www.youtube.com/watch?v=ms5B0luU0no)  
+
 ---
 
 ### ■残課題  
-* ステッチ調整  
 * 魚眼レンズ＋センサーで、全天球カメラモジュールの自作  
 * 撮影→表示遅延の削減  
 * フレームレートの改善  

@@ -32,6 +32,12 @@ The following sentences are in Japanese only.
 * [Calibration](https://github.com/sisinn/raspi_telexistence_vr/blob/master/doc/calibration.md)  
 
 ---
+## Demo  
+
+Virtual Watermelon splitting in side view  
+[![Virtual Watermelon splitting in side view](http://img.youtube.com/vi/ms5B0luU0no/0.jpg)](http://www.youtube.com/watch?v=ms5B0luU0no)  
+
+---
 ## Author
 
 [sisinn](https://github.com/sisnn)
