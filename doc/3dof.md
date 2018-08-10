@@ -10,8 +10,9 @@ VRゴーグルを装着する頭部の向きを、リアルタイムに検出す
 ![arduino+9axis](./img/3dof.jpg)  
 
 ※3Dof、6Dofの違いは、以下  
-|<img src="./img/vr_motion_tracking_3dof.png" width=50%>|<img src="./img/vr_motion_tracking_6dof.png" width=50%>|
-|:---:|:---:|
+
+| <img src="./img/vr_motion_tracking_3dof.png" width=50%> | <img src="./img/vr_motion_tracking_6dof.png" width=50%> |  
+|:---:|:---:|  
 |3DoF|6DoF|  
 
 ### ■arduino  
