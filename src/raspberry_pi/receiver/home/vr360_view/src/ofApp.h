@@ -6,10 +6,10 @@
 
 #define SCREEN_WIDTH        1920
 #define SCREEN_HIGH         1080
-//#define SLICES              240
-//#define STACKS              135
-#define SLICES              48
-#define STACKS              27
+#define SLICES              240
+#define STACKS              135
+//#define SLICES              48
+//#define STACKS              27
 
 #define VERTEX_COUNT        (SLICES * 2 + 2)
 #define PRIMITIVE_COUNT     (STACKS)
@@ -23,12 +23,15 @@ extern float focal;
 extern float smooth;
 extern int circle_center_x;
 extern int circle_center_y;
+extern int front_tilt;
+extern int back_tilt;
 
 typedef enum{
     YELLOW_STATE_STARTUP,
     YELLOW_STATE_NOMAL,
     YELLOW_STATE_CROSS,
     YELLOW_STATE_ROTATE,
+    YELLOW_STATE_PAUSE,
     YELLOW_STATE_CLEAR,
     YELLOW_STATE_MAX
 } eYELLOW_STATE;

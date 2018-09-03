@@ -30,6 +30,9 @@ uniform vec2 center_b;
 uniform vec2 radius_f;
 uniform vec2 center_f;
 
+uniform float rotate_b;
+uniform float rotate_f;
+
 // texture coordinates
 varying vec2 texcoord_b;
 varying vec2 texcoord_f;
@@ -60,8 +63,16 @@ void main()
     float angle = 1.0 - (acos(vr_vector.z) * invTmax);
     vec2 orientation = vr_vector.xy;
 
-    texcoord_b = (1.0 - angle) * orientation * radius_b + center_b;
-    texcoord_f = (1.0 + angle) * orientation * radius_f + center_f;
+    mat2 m_rotate_b = mat2(cos(rotate_b), sin(rotate_b), -sin(rotate_b), cos(rotate_b));
+    mat2 m_rotate_f = mat2(cos(rotate_f), sin(rotate_f), -sin(rotate_f), cos(rotate_f));
+
+    texcoord_b = (1.0 - angle) * m_rotate_b * orientation;
+    texcoord_b = texcoord_b * radius_b;
+    texcoord_b = texcoord_b + center_b;
+    texcoord_f = (1.0 + angle) * m_rotate_f * orientation;
+    texcoord_f = texcoord_f * radius_f;
+    texcoord_f = texcoord_f + center_f;
+
     blend = smoothstep(-1.0 * smooth, smooth, angle);
 }
 

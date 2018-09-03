@@ -15,6 +15,10 @@ int main(int argc, char *argv[])
     char rparam[128] = "";
     int sopt = 0;
     char sparam[128] = "";
+    int bopt = 0;
+    char bparam[128] = "";
+    int aopt = 0;
+    char aparam[128] = "";
     int sum_chk = 0;
 
     // parameter q: quatanion sort select
@@ -22,7 +26,7 @@ int main(int argc, char *argv[])
     // parameter t: theta
     // parameter r: radius
     // parameter s: smooth
-    while ((opt = getopt(argc, argv, "q:f:t:r:s:")) != -1) {
+    while ((opt = getopt(argc, argv, "q:f:t:r:s:a:b:")) != -1) {
         switch (opt) {
             case 'q':
                 qopt = 1;
@@ -56,6 +60,20 @@ int main(int argc, char *argv[])
                 sopt = 1;
                 if(strlen(optarg) < 128){
                     strcpy(sparam, optarg);
+                }
+            break;
+
+            case 'a':
+                aopt = 1;
+                if(strlen(optarg) < 128){
+                    strcpy(aparam, optarg);
+                }
+            break;
+
+            case 'b':
+                bopt = 1;
+                if(strlen(optarg) < 128){
+                    strcpy(bparam, optarg);
                 }
             break;
 
@@ -139,9 +157,6 @@ int main(int argc, char *argv[])
     focal = 1.0;
     if(fopt == 1){
         focal = atof(fparam);
-        if((focal < 0.5) || (focal > 3.0)){
-            focal = 1.0;
-        }
     }
 
     r_max = 90;
@@ -152,6 +167,15 @@ int main(int argc, char *argv[])
         }
     }
 
+    front_tilt = 0;
+    if(bopt == 1){
+        front_tilt = atoi(bparam);
+    }
+    back_tilt = 0;
+    if(aopt == 1){
+        back_tilt = atoi(aparam);
+    }
+
     smooth = 0.02;
     if(sopt == 1){
         smooth = atof(sparam);
@@ -160,7 +184,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("th_max = %d, r_max = %d, focal = %f, smooth = %f\n", th_max, r_max, focal, smooth);
+    printf("th_max = %d, r_max = %d, focal = %f, smooth = %f, tilt = %d,%d\n", th_max, r_max, focal, smooth, front_tilt, back_tilt);
     circle_center_x = 0.0;
     circle_center_y = 0.0;
     printf("circle_center = %d %d\n", circle_center_x, circle_center_y);

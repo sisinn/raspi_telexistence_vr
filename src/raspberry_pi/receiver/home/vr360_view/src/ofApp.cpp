@@ -20,6 +20,8 @@ float center_b[2];
 float radius_f[2];
 float center_f[2];
 int wxyz[4];
+int front_tilt;
+int back_tilt;
 
 string portName = "/dev/ttyACM0";
 int baudrate = 115200;
@@ -291,8 +293,10 @@ void ofApp::getSerialData(ofxIO::ByteBuffer SerialData)
             }
         }
 
-        //default sensor_q.set(x,y,z,w);
-        sensor_q.set(dst[1],dst[2],dst[3],dst[0]);
+        if(yellow_state != YELLOW_STATE_PAUSE){
+            //default sensor_q.set(x,y,z,w);
+            sensor_q.set(dst[1],dst[2],dst[3],dst[0]);
+        }
 
         if(reset_flag == 1){
             sensor_q_first_inv = sensor_q.inverse();
@@ -382,6 +386,8 @@ void ofApp::draw(){
         shader.setUniform2fv("center_b", center_b);
         shader.setUniform2fv("radius_f", radius_f);
         shader.setUniform2fv("center_f", center_f);
+        shader.setUniform1f("rotate_b", (PI_VALUE * (float)back_tilt) / 180.0);
+        shader.setUniform1f("rotate_f", (PI_VALUE * (float)front_tilt) / 180.0);
 
         shader.setUniformMatrix4f("mo", modelMatrix);
 
@@ -406,6 +412,15 @@ void ofApp::draw(){
         ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
         ofSetLineWidth(50);
         ofDrawCircle(0, 0, 300);
+        ofSetLineWidth(1);
+        ofPopMatrix();
+    }
+    else if(yellow_state == YELLOW_STATE_PAUSE){
+        // Draw []
+        ofPushMatrix();
+        ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
+        ofSetLineWidth(50);
+        ofDrawRectangle(-900, -500, 1800, 1000);
         ofSetLineWidth(1);
         ofPopMatrix();
     }
